@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/08/2024
+Var
+// Seção de Declarações das variáveis 
+a, b, c:inteiro
+divi, t, d, soma, sub:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("Qual é o preço da sua refeição?")
+leia(a)
+escreval("E o percentual de gorjeta?")
+leia(b)
+
+divi <- (b/100) * a
+soma <- a + divi
+
+se a > 100 entao
+d <- (10/a) * 100
+sub <- a - d
+t <- sub+divi
+escreval("o preço da sua refeição é", a)
+escreval("o preço da sua gorjeta é", b)
+escreval("o preço do desconto é", sub)
+senao
+escreval("o preço total com gorjeta é", soma)
+fimse
+Fimalgoritmo

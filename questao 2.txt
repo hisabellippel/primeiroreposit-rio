@@ -1,0 +1,36 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/08/2024
+Var
+// Seção de Declarações das variáveis 
+leitura, pontos: inteiro
+ponto:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Quantas horas o cliente leu esse mês?")
+   leia(leitura)
+
+   se leitura<5 entao
+      pontos<-3*leitura
+      escreval ("Você tem ",pontos, " pontos")
+   senao
+      se (leitura>=5) e (leitura<15) entao
+         pontos<-7*leitura
+         escreval ("Você tem ",pontos, " pontos")
+      senao
+         pontos<-12*leitura
+         escreval ("Você tem ",pontos, " pontos")
+
+         se pontos>50 entao
+            ponto<-(pontos/10)+pontos
+         senao
+            ponto<-pontos
+            Escreval ("então",ponto)
+
+         fimse
+      fimse
+   fimse
+Fimalgoritmo
